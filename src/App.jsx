@@ -46,4 +46,27 @@ function App() {
     )
 }
 
+function App() {
+    const [darkMode, setDarkMode] = useState(true);
+    return (
+        <>
+            <ThemeProvider theme ={darkMode ? darkTheme : lightTheme}>
+                <GlobalStyles/>
+                <MediaDiv>
+                    <Header darkMode = {darkMode} setDarkMode = {setDarkMode}/>
+                    <Main>
+                        <Slogun></Slogun>
+                        <Routes>
+                            <Route path = "/" element = {<ShowPostList></ShowPostList>}></Route>
+                            <Route path = "/write" element = {<WritePost></WritePost>}></Route>
+                            <Route paht = "/post/:postID" element = {<ShowPost></ShowPost>}></Route>
+                        </Routes>
+                    </Main>
+                    <Footer />
+                </MediaDiv>
+            </ThemeProvider>    
+        </>
+    )
+}
+
 export default App;

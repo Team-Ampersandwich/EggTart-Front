@@ -43,5 +43,4 @@ function WritePost() {
     </PostSection>
   );
 }
-
 export default WritePost;

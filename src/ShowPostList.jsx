@@ -25,15 +25,13 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import EachPost from './EachPost';
 
-
-function ShowPostList({ isPost, loading, addPost, postList }){
+function ShowPostList({isPost, loading}){
     return (
         <>
             <PostSection>
                     <PostTitleDiv>
-                        <FontAwesomeIcon onClick = {addPost} icon = {faArrowsRotate} />
+                        <FontAwesomeIcon icon = {faArrowsRotate} />
                         <PostTitle>익명게시판</PostTitle>
                         <FontAwesomeIcon icon = {faPenToSquare} />
                     </PostTitleDiv>
@@ -48,13 +46,17 @@ function ShowPostList({ isPost, loading, addPost, postList }){
                                     </LoadingDiv>
                             ) : (
                                 <ul>
-                                    {postList.map((element) => (
-                                        <EachPost 
-                                        key={element.id} 
-                                        title = {element.title}
-                                        replCount = {element.replCount}
-                                        />
-                                    ))}
+                                    <EachPostLi>
+                                        <div>
+                                            <FontAwesomeIcon 
+                                                icon ={faLocationPin}
+                                            />
+                                            <PostLink>
+                                                React가 너무 재미있어요.
+                                            </PostLink>
+                                        </div>
+                                        <PostRepl>[35]</PostRepl>
+                                    </EachPostLi>
                                 </ul>
                             )}
                     </PostListDiv>
