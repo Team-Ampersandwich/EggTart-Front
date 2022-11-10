@@ -34,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "��#\u0000 \u0000E\u0000g\u0000g\u0000T\u0000a\u0000r\u0000t\u0000-\u0000F\u0000r\u0000o\u0000n\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Ampersandwich/EggTart-Front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Ampersandwich/EggTart-Front/issues"
+  },
+  "homepage": "https://github.com/Team-Ampersandwich/EggTart-Front#readme"
 }
